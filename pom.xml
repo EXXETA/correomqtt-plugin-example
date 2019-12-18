@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.exxeta.correomqtt.plugin.example</groupId>
+    <artifactId>CorreoMqttExamplePlugin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>13</maven.compiler.target>
+        <maven.compiler.source>13</maven.compiler.source>
+        <maven.compiler.release>11</maven.compiler.release>
+
+        <plugin.id>example-plugin</plugin.id>
+        <plugin.class>com.exxeta.correomqtt.plugin.example.ExamplePlugin</plugin.class>
+        <plugin.version>0.0.1</plugin.version>
+        <plugin.provider>EXXETA AG</plugin.provider>
+        <plugin.description>Example Plugin to simplify Plugin Creation</plugin.description>
+        <plugin.requires/>
+        <plugin.dependencies/>
+        <plugin.license/>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.exxeta</groupId>
+            <artifactId>correomqtt</artifactId>
+            <version>0.9</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                        </manifest>
+                        <manifestEntries>
+                            <Plugin-Class>${plugin.class}</Plugin-Class>
+                            <Plugin-Id>${plugin.id}</Plugin-Id>
+                            <Plugin-Version>${plugin.version}</Plugin-Version>
+                            <Plugin-Description>${plugin.description}</Plugin-Description>
+                            <Plugin-Provider>${plugin.provider}</Plugin-Provider>
+                            <Plugin-Requires>${plugin.requires}</Plugin-Requires>
+                            <Plugin-Dependencies>${plugin.dependencies}</Plugin-Dependencies>
+                            <Plugin-License>${plugin.license}</Plugin-License>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
