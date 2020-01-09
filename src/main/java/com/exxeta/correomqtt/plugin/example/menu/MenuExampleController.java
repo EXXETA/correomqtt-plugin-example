@@ -1,11 +1,11 @@
-package com.exxeta.correomqtt.plugin.example;
+package com.exxeta.correomqtt.plugin.example.menu;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.HBox;
 import lombok.Setter;
 
-public class ExampleController {
+public class MenuExampleController {
 
     @Setter
     private HBox pluginBox;
@@ -20,11 +20,5 @@ public class ExampleController {
 
     public boolean isLogEnabled() {
         return exampleLogCheckBox.isSelected();
-    }
-
-    public void onStop() {
-        if (pluginBox != null) {
-            pluginBox.getChildren().remove(exampleLogCheckBox);
-        }
     }
 }

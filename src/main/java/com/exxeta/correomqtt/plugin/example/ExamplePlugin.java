@@ -1,5 +1,6 @@
 package com.exxeta.correomqtt.plugin.example;
 
+import com.exxeta.correomqtt.plugin.example.menu.MenuExampleController;
 import javafx.fxml.FXMLLoader;
 import org.pf4j.Plugin;
 import org.pf4j.PluginWrapper;
@@ -13,7 +14,7 @@ public class ExamplePlugin extends Plugin {
 
     private Logger LOGGER = LoggerFactory.getLogger(ExamplePlugin.class);
 
-    private final HashMap<String, ExampleController> exampleControllers;
+    private final HashMap<String, MenuExampleController> exampleControllers;
 
     public ExamplePlugin(PluginWrapper wrapper) {
         super(wrapper);
@@ -29,15 +30,14 @@ public class ExamplePlugin extends Plugin {
     @Override
     public void stop() {
         super.stop();
-        exampleControllers.values().forEach(ExampleController::onStop);
         LOGGER.info("Good bye.");
     }
 
-    public ExampleController getExampleController(String connectionId) {
+    public MenuExampleController getExampleController(String connectionId) {
         return exampleControllers.get(connectionId);
     }
 
-    public void putExampleController(String connectionId, ExampleController controller) {
+    public void putExampleController(String connectionId, MenuExampleController controller) {
         exampleControllers.put(connectionId, controller);
     }
 
