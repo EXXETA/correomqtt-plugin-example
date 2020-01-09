@@ -3,6 +3,7 @@ package com.exxeta.correomqtt.plugin.example;
 import com.exxeta.correomqtt.plugin.example.menu.MenuExampleController;
 import javafx.fxml.FXMLLoader;
 import org.pf4j.Plugin;
+import org.pf4j.PluginRuntimeException;
 import org.pf4j.PluginWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,7 +48,7 @@ public class ExamplePlugin extends Plugin {
         try {
             loader.load();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new PluginRuntimeException("Failed to load layout file");
         }
     }
 }
