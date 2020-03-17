@@ -1,4 +1,4 @@
-package com.exxeta.correomqtt.plugin.example.menu;
+package org.correomqtt.plugin.example.menu;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;

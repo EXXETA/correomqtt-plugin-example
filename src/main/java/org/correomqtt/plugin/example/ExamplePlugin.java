@@ -1,6 +1,6 @@
-package com.exxeta.correomqtt.plugin.example;
+package org.correomqtt.plugin.example;
 
-import com.exxeta.correomqtt.plugin.example.menu.MenuExampleController;
+import org.correomqtt.plugin.example.menu.MenuExampleController;
 import javafx.fxml.FXMLLoader;
 import org.pf4j.Plugin;
 import org.pf4j.PluginRuntimeException;
