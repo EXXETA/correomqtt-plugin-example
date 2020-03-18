@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.correomqtt</groupId>
             <artifactId>correomqtt-client</artifactId>
-            <version>0.9</version>
+            <version>0.10.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
