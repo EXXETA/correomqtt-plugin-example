@@ -1,7 +1,7 @@
-package com.exxeta.correomqtt.plugin.example.menu;
+package org.correomqtt.plugin.example.menu;
 
-import com.exxeta.correomqtt.plugin.example.ExamplePlugin;
-import com.exxeta.correomqtt.plugin.spi.PublishMenuHook;
+import org.correomqtt.plugin.example.ExamplePlugin;
+import org.correomqtt.plugin.spi.PublishMenuHook;
 import javafx.scene.layout.HBox;
 import org.jdom2.Element;
 import org.pf4j.Extension;

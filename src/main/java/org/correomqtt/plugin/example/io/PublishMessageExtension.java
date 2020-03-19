@@ -1,9 +1,9 @@
-package com.exxeta.correomqtt.plugin.example.io;
+package org.correomqtt.plugin.example.io;
 
-import com.exxeta.correomqtt.plugin.example.ExamplePlugin;
-import com.exxeta.correomqtt.plugin.example.menu.MenuExampleController;
-import com.exxeta.correomqtt.plugin.model.MessageExtensionDTO;
-import com.exxeta.correomqtt.plugin.spi.PublishMessageHook;
+import org.correomqtt.plugin.example.ExamplePlugin;
+import org.correomqtt.plugin.example.menu.MenuExampleController;
+import org.correomqtt.plugin.model.MessageExtensionDTO;
+import org.correomqtt.plugin.spi.PublishMessageHook;
 import org.pf4j.Extension;
 import org.pf4j.Plugin;
 import org.slf4j.Logger;
