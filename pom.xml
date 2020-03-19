@@ -6,7 +6,7 @@
 
     <groupId>org.correomqtt.plugin.example</groupId>
     <artifactId>CorreoMqttExamplePlugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,7 @@
 
         <plugin.id>example-plugin</plugin.id>
         <plugin.class>org.correomqtt.plugin.example.ExamplePlugin</plugin.class>
-        <plugin.version>0.0.1</plugin.version>
+        <plugin.version>0.0.2</plugin.version>
         <plugin.provider>EXXETA AG</plugin.provider>
         <plugin.description>Example Plugin to simplify Plugin Creation</plugin.description>
         <plugin.requires/>
